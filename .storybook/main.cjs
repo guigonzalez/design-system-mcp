@@ -1,11 +1,7 @@
-import type { StorybookConfig } from '@storybook/react-vite';
-import { fileURLToPath } from 'node:url';
-import { dirname, resolve } from 'node:path';
+const path = require('path');
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
-
-const config: StorybookConfig = {
+/** @type { import('@storybook/react-vite').StorybookConfig } */
+const config = {
   stories: ['../src/**/*.mdx', '../src/**/*.stories.@(js|jsx|mjs|ts|tsx)'],
   addons: [
     '@storybook/addon-links',
@@ -23,7 +19,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        '@': resolve(__dirname, '../src'),
+        '@': path.resolve(__dirname, '../src'),
       };
     }
     // Set base path for GitHub Pages
@@ -32,4 +28,4 @@ const config: StorybookConfig = {
   },
 };
 
-export default config;
+module.exports = config;
