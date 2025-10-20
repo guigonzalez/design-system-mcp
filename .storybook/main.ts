@@ -27,6 +27,8 @@ const config: StorybookConfig = {
         '@': path.resolve(__dirname, '../src'),
       };
     }
+    // Set base path for GitHub Pages
+    config.base = '/design-system-mcp/storybook/';
     return config;
   },
 };
