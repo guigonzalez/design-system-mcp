@@ -1,7 +1,6 @@
 import type { StorybookConfig } from '@storybook/react-vite';
-import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import { fileURLToPath } from 'node:url';
+import { dirname, resolve } from 'node:path';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -24,7 +23,7 @@ const config: StorybookConfig = {
     if (config.resolve) {
       config.resolve.alias = {
         ...config.resolve.alias,
-        '@': path.resolve(__dirname, '../src'),
+        '@': resolve(__dirname, '../src'),
       };
     }
     // Set base path for GitHub Pages
