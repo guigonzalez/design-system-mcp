@@ -500,6 +500,15 @@ All standard HTML div attributes are also supported.
 </Alert>
 ```
 
+## Live Demos
+
+### Deployed Sites
+
+- **Main App**: [https://guigonzalez.github.io/design-system-mcp/](https://guigonzalez.github.io/design-system-mcp/)
+- **Storybook**: [https://guigonzalez.github.io/design-system-mcp/storybook/](https://guigonzalez.github.io/design-system-mcp/storybook/)
+
+Both sites are automatically deployed via GitHub Actions on every push to the `main` branch.
+
 ## Development
 
 ### Run Development Server
@@ -529,6 +538,16 @@ npm run build
 ```bash
 npm run build-storybook
 ```
+
+## Deployment
+
+This project is automatically deployed to GitHub Pages using GitHub Actions. Every push to the `main` branch triggers a deployment workflow that:
+
+1. Builds the main application
+2. Builds Storybook
+3. Deploys both to GitHub Pages
+
+For detailed deployment documentation, see [docs/deployment.md](docs/deployment.md).
 
 ## Component Structure
 

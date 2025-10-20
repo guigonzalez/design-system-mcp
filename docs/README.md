@@ -13,6 +13,7 @@ Welcome to the AfterDS 2.0 design system documentation. This comprehensive guide
   - [Accordion](./components/accordion.md)
 - [Design Tokens](./design-tokens.md) - Color, spacing, typography reference
 - [Dark Mode](./dark-mode.md) - Implementing dark mode support
+- [Deployment](./deployment.md) - GitHub Pages deployment guide
 - [Design System Setup](./design-system-setup.md) - Full implementation guide
 - [Designer Workflow](./designer-workflow.md) - How designers work with Figma
 - [Design-Dev Sync](./design-dev-sync.md) - Design to code workflow
@@ -120,9 +121,11 @@ See [Dark Mode Guide](./dark-mode.md) for implementation details.
 ## 🔗 Links
 
 - [Figma Design File](https://www.figma.com/design/xIZm13sWi0pTw4P0Medpei/AfterDS-2.0)
-- [GitHub Repository](https://github.com/yourusername/afterds-2.0)
-- [Storybook Demo](http://localhost:6006)
-- [Live App](http://localhost:5173)
+- [GitHub Repository](https://github.com/guigonzalez/design-system-mcp)
+- [Live Demo](https://guigonzalez.github.io/design-system-mcp/)
+- [Storybook](https://guigonzalez.github.io/design-system-mcp/storybook/)
+- [Local Storybook](http://localhost:6006)
+- [Local Dev Server](http://localhost:5173)
 
 ## 📖 Documentation Guide
 
